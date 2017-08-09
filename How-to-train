@@ -1,0 +1,19 @@
+Launch tensorboard
+
+
+ bazel build tensorflow/tensorboard:tensorboard
+./bazel-bin/tensorflow/tensorboard/tensorboard --logdir=/home/fuego/rosetta-db
+
+
+
+Launch the training
+
+cd /home/fuego/tensorflow/tensorflow/examples/image_retraining
+
+python retrain.py \
+  --model_dir=inception \
+  --summaries_dir=training_summaries/basic \
+  --output_graph=retrained_graph.pb \
+  --output_labels=retrained_labels.txt \
+  --image_dir=/home/fuego/Desktop/forest_db
+

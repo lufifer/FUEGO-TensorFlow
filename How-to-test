@@ -1,0 +1,20 @@
+
+cd /home/fuego/tensorflow/tensorflow/examples/image_retraining/
+
+
+python label_image.py PATH_TO_THE_IMAGE
+
+to get the path :
+*go in the folder 
+*open in a terminal
+*write : pwd
+the path is : the result given by the command + the name of the file
+for example : /home/fuego/Desktop/rosetta-db/landscape/55.jpg
+
+
+
+
+
+
+
+
